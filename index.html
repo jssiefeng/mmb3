@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>Media Motion and the Body Winter 2024</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {
+  font-family: "Poppins", sans-serif
+  }
+body {
+  font-size:16px;
+  }
+h1 { 
+  font-size:30px;
+  }
+h2 {
+  font-size:25px;
+  }
+  h3 {
+  font-size:18px;
+  }
+img {
+  width: 100%;
+  height: 100%;
+}
+.grid {
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+.w3-half img{
+  margin-bottom:-6px;
+  margin-top:16px;
+  opacity:0.8;
+  cursor:pointer
+  } */
+.w3-half img:hover{
+  opacity:1
+  }
+
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-light-grey w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:200px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-display-topleft" style="display:none;font-size:22px"></a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>IXD<br>DESN 22848 <br> Winter-2024</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#Module3" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Project 3</a> 
+    <a href="#Week9" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Assignment 1</a> 
+    <a href="#Week10" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Assignment 2</a>
+    <a href="#Week11" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Workshop</a> 
+    <a href="#Project3" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Final Design</a> 
+  </div>
+</nav>
+
+<!-- Top menu on small screens
+<header class="w3-container w3-top w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Menu</span>
+</header> -->
+
+<!-- 
+  if you want to link your image to a video use one of the following alt links as an example:
+
+  alt="test1Lorem ipsum dolor sit amet, consectetur adipiscing elit test1Lorem ipsum dolor sit amet, consectetur adipiscing elit <a href='https://www.youtube.com/embed/tgbNymZ7vqY' target='_blank'><p>Project Video Link</p></a>"> 
+  alt="test2Lorem ipsum dolor sit amet, consectetur adipiscing elit <div class='container'><iframe class='responsive-iframe' src='https://www.youtube.com/embed/tgbNymZ7vqY'></iframe></div>">
+
+-->
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:220px;margin-right:20px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="default">
+    <h1 class="w3-jumbo" id="Home"><b>Project 3 Formstorming</b></h1>
+      <h1 class="w3-xxxlarge w3-text-blue"><b>Jessie Feng</b></h1>
+    <hr style="width:50px;border:5px solid grey" class="w3-round">
+  </div>
+  <!-- Boilerplate -->
+  <div id="Module1" class="w3-container" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Project 3</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+  <!-- Project 1 Photo grid (modal) -->
+  <div id="Week9" class="w3-row-padding">
+    <h2>Assignment 1</h2>
+    <h3>
+
+      <p>
+        I worked independently on formstorming this week, reviewing tutorials, example videos, and additional readings from the lecture. I learned more about gesture interaction and explored the "touch" brainstorming activity, which guided my initial research where I drew from a variety of external sources. I tried to research from the perspective that touch is data, which is both proactive and reactive.
+      </p>
+      
+      <p>
+        Potential concepts to research further —
+        <p>
+          <strong>Rhythm games:</strong> The Makey Makey controls immediately reminded me of rhythm games. I wanted to explore them from an interactive standpoint. For example, what makes rhythm game interactions satisfying? I could look into how visuals are generated for pattern-matching and emulate that. <br>Related links: <a href="https://skyl.fr/work/unsustainable">Unsustainable (new media art)</a>
+        </p>
+        <p>
+          <strong>Tactile art & development:</strong> This came from one of my key findings from the brainstorming activity. I came up with phrases like "holding", "grabbing", and "picking up" which reminded me of children's toys and sensory kits. I could also look into motor simulation.
+          During this process I also looked into tactile art and sensory soothing kits. Touch has proven emotional benefits (<a href="https://www.youtube.com/watch?v=GW5p8xOVwRo">Dachner Keltner on Touch</a>).
+        </br>
+          This also relates back to a guided meditation website I found during project 2 (<a href="https://www.thisisathing.io/">"This is a Thing"</a>), my interest in Headspace, and how I could potentially incorporate tactile objects into mindfulness.
+        </p>
+        <p>
+          <strong>Experience design & machine design:</strong> I like the ideas of physical interfaces which involve dragging, moving items, and turning knobs. It might be interesting to design an unconventional controller interface. Micro keyboards have been trending (such as the Figma keypad by Work Louder) but they tend to be flat and lack texture.
+        </p>
+        
+      </p>
+      
+      <p>
+        Sketches overview:
+        <ul>
+          <li>Learned how to overlay different blending modes, use 3D features</li>
+          <li>Had to think about button implementation, which was more difficult than mouse movement</li>
+          <li>Tried to echo some of my research: e.g I did two rhythm game sketches and realized it would be easy to do a score system, I could incorporate TTS or speech synthesis into the tactile development ideas (shapes, emotions), considered machine design in the 3D zooming sketch (I wanted to create a sci-fi interface for a physical machine)</li>
+        </ul>
+      </p>
+      
+      <p>
+        Next steps:
+        <ul>
+          <li>Exploring different materials, textures</li>
+          <li>Plan integration w/ Makey Makey</li>
+          <li>Approach that is more focused on design/fabrication or conceptual instead of crafting the objects from scratch (based on my personal strengths), using things and linking them into one single assembly</li>
+        </ul>
+      </p>
+      
+      <p>
+        Coding references:
+    <a href="https://www.artstation.com/artwork/baqewE">Amazon texture</a>
+         <a href="https://p5js.org/reference/#/p5/filter">Blending modes</a>
+      <a href="https://openprocessing.org/sketch/419773">Tree sketch</a>
+      </p>
+      
+    </h3>
+
+    <h1>3A Formstorming Grid</h1>
+    <div class="grid">
+      <img src="images/Assignment1/Group 1.png" style="width:100%" onclick="onClick(this)">
+      <img src="images/Assignment1/Group 2.png" style="width:100%" onclick="onClick(this)">
+      <img src="images/Assignment1/Group 3.png" style="width:100%" onclick="onClick(this)">
+      <img src="images/Assignment1/Group 4.png" style="width:100%" onclick="onClick(this)">
+      <img src="images/Assignment1/Group 5.png" style="width:100%" onclick="onClick(this)">
+
+      <img src="images/Assignment1/iteration1.gif" style="width:100%" onclick="onClick(this)">
+      <img src="images/Assignment1/iteration2.gif" style="width:100%" onclick="onClick(this)">
+      <img src="images/Assignment1/iteration3.gif" style="width:100%" onclick="onClick(this)">
+      <img src="images/Assignment1/iteration4.gif" style="width:100%" onclick="onClick(this)">
+      <img src="images/Assignment1/iteration5.gif" style="width:100%" onclick="onClick(this)">
+      <!-- https://www.artstation.com/artwork/baqewE -->
+      <!-- https://p5js.org/reference/#/p5/filter -->
+      <!-- https://openprocessing.org/sketch/419773 -->
+
+      <img src="images/Assignment1/iteration6.gif" style="width:100%" onclick="onClick(this)">
+      <img src="images/Assignment1/iteration7.gif" style="width:100%" onclick="onClick(this)">
+      <img src="images/Assignment1/iteration8.gif" style="width:100%" onclick="onClick(this)">
+      <img src="images/Assignment1/iteration9.gif" style="width:100%" onclick="onClick(this)">
+      <img src="images/Assignment1/iteration10.gif" style="width:100%" onclick="onClick(this)">
+      
+      <img src="images/Assignment1/iteration11.gif" style="width:100%" onclick="onClick(this)">
+      <img src="images/Assignment1/iteration12.gif" style="width:100%" onclick="onClick(this)">
+      <img src="images/Assignment1/iteration13.gif" style="width:100%" onclick="onClick(this)">
+      <img src="images/Assignment1/iteration14.gif" style="width:100%" onclick="onClick(this)">
+      <img src="images/Assignment1/iteration15.gif" style="width:100%" onclick="onClick(this)">
+      
+      <img src="images/Assignment1/iteration16.gif" style="width:100%" onclick="onClick(this)">
+      <img src="images/Assignment1/iteration17.gif" style="width:100%" onclick="onClick(this)">
+      <img src="images/Assignment1/iteration18.gif" style="width:100%" onclick="onClick(this)">
+      <img src="images/Assignment1/iteration19.gif" style="width:100%" onclick="onClick(this)">
+      <img src="images/Assignment1/iteration20.gif" style="width:100%" onclick="onClick(this)">
+      
+
+      </div>
+      <!-- <h1>3B Video</h1>
+     <div class='container'><iframe class='responsive-iframe' src='https://www.youtube.com/embed/tgbNymZ7vqY'></iframe></div> -->
+  </div>
+
+  <hr style="width:90%;border:5px solid grey;margin-top:80px" class="w3-round"></hr>
+
+  <div id="Week10" >
+    <h2>Assignment 2</h2>
+    <h3>Did you work in a group of indipendently this week?
+      <ul> 
+        <li>How have you used lecture materials? </li>
+        <li>What did you explore with phyical prototyping?</li>
+          <li>How might you continue exploring interactions and sound throughout Project 3?</li>
+        </ul>
+    </h3>
+    <div class="grid">
+      <img src="images/Assignment2/happy.png" style="width:100%" onclick="onClick(this)">
+      <img src="images/Assignment2/happy.png" style="width:100%" onclick="onClick(this)">
+      <img src="images/Assignment2/happy.png" style="width:100%" onclick="onClick(this)">
+      <img src="images/Assignment2/happy.png" style="width:100%" onclick="onClick(this)">
+      <img src="images/Assignment2/happy.png" style="width:100%" onclick="onClick(this)">
+
+      <img src="images/Assignment2/happy.png" style="width:100%" onclick="onClick(this)">
+      <img src="images/Assignment2/happy.png" style="width:100%" onclick="onClick(this)">
+      <img src="images/Assignment2/happy.png" style="width:100%" onclick="onClick(this)">
+      <img src="images/Assignment2/happy.png" style="width:100%" onclick="onClick(this)">
+      <img src="images/Assignment2/happy.png" style="width:100%" onclick="onClick(this)">
+
+      <img src="images/Assignment2/happy.png" style="width:100%" onclick="onClick(this)">
+      <img src="images/Assignment2/happy.png" style="width:100%" onclick="onClick(this)">
+      <img src="images/Assignment2/happy.png" style="width:100%" onclick="onClick(this)">
+      <img src="images/Assignment2/happy.png" style="width:100%" onclick="onClick(this)">
+      <img src="images/Assignment2/happy.png" style="width:100%" onclick="onClick(this)">
+
+      <img src="images/Assignment2/happy.png" style="width:100%" onclick="onClick(this)">
+      <img src="images/Assignment2/happy.png" style="width:100%" onclick="onClick(this)">
+      <img src="images/Assignment2/happy.png" style="width:100%" onclick="onClick(this)">
+      <img src="images/Assignment2/happy.png" style="width:100%" onclick="onClick(this)">
+      <img src="images/Assignment2/happy.png" style="width:100%" onclick="onClick(this)">
+
+      <img src="images/Assignment2/happy.png" style="width:100%" onclick="onClick(this)">
+      <img src="images/Assignment2/happy.png" style="width:100%" onclick="onClick(this)">
+      <img src="images/Assignment2/happy.png" style="width:100%" onclick="onClick(this)">
+      <img src="images/Assignment2/happy.png" style="width:100%" onclick="onClick(this)">
+      <img src="images/Assignment2/happy.png" style="width:100%" onclick="onClick(this)">
+    </div>
+    <h1>3B Video</h1>
+    <div class='container'><iframe class='responsive-iframe' src='https://www.youtube.com/embed/tgbNymZ7vqY'></iframe></div>
+
+
+  </div>
+  
+  <hr style="width:90%;border:5px solid grey;margin-top:80px" class="w3-round"></hr>
+
+  <div id="Week11" class="w3-row-padding">
+    <h2>Workshop</h2>
+    <div class="grid">
+      <img src="images/Workshop/happy.png" style="width:100%" onclick="onClick(this)">
+      <img src="images/Workshop/happy.png" style="width:100%" onclick="onClick(this)">
+      <img src="images/Workshop/happy.png" style="width:100%" onclick="onClick(this)">
+      <img src="images/Workshop/happy.png" style="width:100%" onclick="onClick(this)">
+      <img src="images/Workshop/happy.png" style="width:100%" onclick="onClick(this)">  
+    </div>
+  </div>
+
+  <hr style="width:90%;border:5px solid grey;margin-top:80px" class="w3-round"></hr>
+
+  <!-- Boilerplate -->
+  <div id="Project3" class="w3-container" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Project 3</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <h2>Final Project 3 Design</h2>
+    <p>PLACEHOLDER TEXT, replace this with your design statement
+    </p>
+    <img src="images/final/happy.png" style="width:100%" onclick="onClick(this)">
+  </div>
+  
+   <!-- Modal for full size images on click-->
+   <div id="modal01" class="w3-modal w3-grey" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-center w3-transparent" style ="padding:20px">
+      <img id="img01" class="w3-image">
+      <h2 id="caption"></h2>
+
+      <!-- <div id="urLink"></div> -->
+      <!-- <a id="urLink" class="container"><iframe class="responsive-iframe"></iframe></a> -->
+    <!-- </div> -->
+  </div>
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+
+  // var captionUrl = document.getElementById("urLink");
+  // captionUrl.innerHTML = element.url;
+
+  //document.getElementById("urLink").src = element.url;
+}
+</script>
+
+</body>
+</html>
